@@ -87,6 +87,7 @@
 }
 .section {
     background-color: rgb(235, 228, 228);
+    font-size: 14px;
 }
 .card-content {
     display: flex;
@@ -94,8 +95,8 @@
     flex-wrap: wrap;
 }
 .card-vertical {
-    width: 350px;
-    height: 1000px;
+    width: 250px;
+    height: 750px;
     margin: 20px 20px 80px 20px;
     border-radius: 25px;
     background-color: #f2f2f2;
@@ -107,8 +108,8 @@
     background-color: #f2f2f2;
 }
 .card-description {
-    width: 350px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     box-sizing: border-box;
     padding: 10px 10px;
     background-color: #f2f2f2;
@@ -117,8 +118,7 @@
     text-decoration: none;
     background-color: rgb(36,66,88);
     color: white;
-    margin: 4px;
-    padding: 8px;
+    padding: 4px;
     border-radius: 25px;
 }
 .card-content a:hover { 
@@ -129,8 +129,8 @@
     text-align: center;
 }
 .card-image img {
-    width: 350px;
-    height: 550px;
+    width: 250px;
+    height: 350px;
 }
 .Recommended-text {
     padding: 10px;
@@ -295,5 +295,20 @@ form {
     .header, .nav {
         flex-direction: column;
         align-items: start;
+    }
+}
+@media (max-width: 350px) {
+    .header, .nav {
+        flex-direction: column;
+        align-items: start;
+    }
+    .row aside {
+        background-color: white;
+        color: rgb(56, 56, 172);
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        width: auto;
+        height: auto;
     }
 }
