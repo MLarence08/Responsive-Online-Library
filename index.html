@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/aadf22bfab.js" crossorigin="anonymous"></script>
+    <title>Responsive Online Library</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <div><img src="assets/images/MLM logo.png"></div>
+            <div class="online-library"><span>Online Library</span></div>
+        </div>
+        <div>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <span>|</span>
+            <li><a href="#">Product</a></li>
+            <span>|</span>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <div class="search-bar">
+            <input type="search" placeholder="Enter Book, Title, Author, etc." size="60">
+        </div>
+        <div class="search-bar">   
+            <select id="genre" name="genre" style="width: 150px;">
+                <option disabled selected>Filter</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Novel">Novel</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Romance">Romance</option>
+            </select>
+            <input type="button" value="SEARCH">
+        </div>
+    </div>
+    <div class="row">
+        <aside>
+            <div class="browse">
+                <span>Browse</span>
+                <ul class="browse-list">
+                    <li><i class="fa-solid fa-magnifying-glass"></i><a href="#"> Discover</a></li>
+                    <li><i class="fa-solid fa-bars"></i><a href="#"> New Release</a></li>
+                    <li><i class="fa-solid fa-ranking-star"></i><a href="#"> Popular</a></li> 
+                    <ul class="sub-menu"> 
+                        <li>
+                            <input type="checkbox" id="Fiction" name="genre" value="Fiction">
+                            <label for="Fiction">Fiction</label>
+                        </li>
+                        <li>         
+                            <input type="checkbox" id="Novel" name="genre" value="Novel">
+                            <label for="Novel">Novel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Fantasy" name="genre" value="Fantasy">
+                            <label for="Fantasy">Fantasy</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Horror" name="genre" value="Horror">
+                            <label for="Horror">Horror</label>
+                        </li>
+                    </ul>
+                </ul>  
+            </div>
+            <div class="browse">
+                <span>Library</span>
+                <ul class="browse-list">
+                    <li><i class="fa-solid fa-heart"></i><a href="#"> Wishlist</a></li>
+                    <li><i class="fa-solid fa-thumbs-up"></i><a href="#"> Likes</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><a href="checkout-forms.html"> Go to Cart</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="section">
+            <div class="card-content">
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image1.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>To Kill a Mockingbird</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P100.00</h4>
+                            <p>Novel by Harper Lee</p>
+                            <p>Originally published: July 11, 1960</p>
+                            <p>To Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools. To Kill a Mockingbird has become a classic of modern American literature, winning the Pulitzer Prize.</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div>    
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image2.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>The Great Gatsby</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P150.00</h4>
+                            <p>Novel by F. Scott Fitzgerald</p>
+                            <p>Originally published: April 10, 1925</p>
+                            <p>The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div> 
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image3.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>Nineteen Eighty-Four</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P120.00</h4>
+                            <p>Novel by George Orwell</p>
+                            <p>Originally published: June 8, 1949</p>
+                            <p>Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime.</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div>
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image4.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>Adventures of Huckleberry Finn</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P115.00</h4>
+                            <p>Novel by Mark Twain</p>
+                            <p>Originally published: December 10, 1884</p>
+                            <p>Adventures of Huckleberry Finn is a novel by American author Mark Twain, which was first published in the United Kingdom in December 1884 and in the United States in February 1885.</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div>
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image1.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>To Kill a Mockingbird</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P100.00</h4>
+                            <p>Novel by Harper Lee</p>
+                            <p>Originally published: July 11, 1960</p>
+                            <p>To Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools. To Kill a Mockingbird has become a classic of modern American literature, winning the Pulitzer Prize.</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div>
+                <div class="card-vertical">
+                    <div class="card-image">
+                        <img src="assets/Images/image2.jpg">
+                    </div>
+                    <div class="card-description">
+                        <div>
+                            <h1>The Great Gatsby</h1>
+                            <h4><i class="fa-solid fa-tag"></i> P150.00</h4>
+                            <p>Novel by F. Scott Fitzgerald</p>
+                            <p>Originally published: April 10, 1925</p>
+                            <p>The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan</p>
+                        </div>
+                    </div>
+                    <div class="card-button-vertical">
+                        <a href="#" class="add-to-cart">Add to cart</a>
+                        <a href="#" class="wishlist">Wishlist</a>
+                        <a href="checkout-forms.html" class="buynow"><i class="fa-solid fa-cart-plus"></i> Buy Now!</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="Recommended-text">
+                <h1>Recommended Author</h1>
+            </div>
+            <div class="Recommended-Author">
+                <div class="author">
+                    <div class="author-image">
+                        <a href="#"><img src="assets/images/F_Scott_Fitzgerald.jpg"></a>
+                    </div>
+                    <div class="author-name">
+                        <a href="#"><span>F. Scott Fitzgerald</span></a>
+                    </div>
+                    <div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-image">
+                        <a href="#"><img src="assets/images/George_Orwell.jpg"></a>
+                    </div>
+                    <div class="author-name">
+                        <a href="#"><span>George Orwell</span></a>
+                    </div>
+                    <div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-image">
+                        <a href="#"><img src="assets/images/harper-lee.jpg"></a>
+                    </div>
+                    <div class="author-name">
+                        <a href="#"><span>Harper Lee</span></a>
+                    </div>
+                    <div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-image">
+                        <a href="#"><img src="assets/images/Mark_Twain.jpg"></a>
+                    </div>
+                    <div class="author-name">
+                        <a href="#"><span>Mark Twain</span></a>
+                    </div>
+                    <div>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="faux-footer">
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="copyrights">
+            <span>Manila, Philippines 2023</span>
+        </div>
+    </footer>
+</body>
+</html>

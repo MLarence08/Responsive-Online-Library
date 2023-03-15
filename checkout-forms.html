@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/aadf22bfab.js" crossorigin="anonymous"></script>
+    <title>Checkout Form</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <div><img src="assets/images/MLM logo.png"></div>
+            <div class="online-library"><span>Online Library</span></div>
+        </div>
+        <div>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <span>|</span>
+            <li><a href="#">Product</a></li>
+            <span>|</span>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <form action="checkout-forms.html" method="#">
+        <div class="checkout-form">
+            <div class="name">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" style="width: 242px;">
+            </div>
+            <div class="address">   
+                <label for="Address" >Address:</label>
+                <input type="text" id="Address" name="Address" style="width: 242px;">
+            </div> 
+            <div class="region">    
+                <label for="Region" >Region:</label>
+                <select style="width: 250px;">
+                    <option selected disabled>Select your region</option>
+                    <option value="RegionI">Region I</option>
+                    <option value="RegionII">Region II</option>
+                    <option value="RegionIII">Region III</option>
+                </select>
+            </div>
+            <div class="contact">
+                <label for="ContactNumber" >Contact Number:</label>
+                <input type="tel" id="ContactNumber" name="ContactNumber" pattern="[0-9]{11}" maxlength="11" placeholder="Ex. 09*******1234">    
+            </div>
+            <div class="paymentmethod">
+                <div><span>Payment Method:</span></div>
+                <div>
+                    <input type="radio" id="CashOnDelivery" name="PaymentMethod" value="CashOnDelivery">
+                    <label for="CashOnDelivery">Cash On Delivery</label>
+                </div>    
+                <div>
+                    <input type="radio" id="MasterCard" name="PaymentMethod" value="MasterCard">
+                    <label for="MasterCard">Master Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="Visa" name="PaymentMethod" value="Visa">
+                    <label for="Visa">Visa</label>
+                </div>
+                <div>   
+                    <input type="radio" id="AmericanExpress" name="PaymentMethod" value="AmericaExpress">
+                    <label for="AmericanExpress">American Express</label>
+                </div>
+                <div class="submit">    
+                <input type="submit" value="Place Order">
+                </div> 
+            </div>
+        </div>
+        <div class="order-summary">
+            <div class="order-header">
+                <h2>Order Summary</h2>
+                <br>
+            </div>
+            <div class="order-items">
+                <div><h4>The Great Gatsby </h4></div>
+                <div class="price"><span>P150.00</span></div>
+            </div>
+            <div class="order-items">
+                <div><h4>To Kill a Mockingbird</h4></div>
+                <div class="price"><span>P100.00</span></div>
+            </div>
+            <div class="order-items">
+                <div><h4>Nineteen Eighty-Four</h4></div>
+                <div class="price"><span>P120.00</span></div>
+            </div>
+            <div class="order-total">
+                <div>              
+                    <p>Promo Discount</p>
+                    <p>Shipping Fee</p>
+                    <h4>Total</h4>
+                </div>
+                <div>
+                    <p>None</p>
+                    <p>P50</p>
+                    <h4>P420</h4>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="faux-footer">
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="copyrights">
+            <span>Manila, Philippines 2023</span>
+        </div>
+    </footer>   
+</body>
+</html>
